@@ -16,12 +16,11 @@ angular.module('starter.controllers', [])
 
 .controller('ServicesCtrl', function($scope) {
   $scope.services = [
-    { title: 'Steren', id: 1 },
-    { title: 'Librería Ramírez', id: 2 },
-    { title: 'Titos', id: 3 },
-    { title: 'Shirami', id: 4 },
-    { title: 'Farmacia similares', id: 5 },
-    { title: 'Totas Don Beto', id: 6 }
+    { title: 'Steren', id: 1, logo: '../img/services_img/steren_logo.jpg', img: '../img/services_img/steren_largeimage.jpg', description: 'Vendo electronica' },
+    { title: 'Librería Ramírez', id: 2, logo: '../img/services_img/ramirez_logo.jpg', img: '../img/services_img/ramirez_largeimage.jpg', description: 'Vendo libros' },
+    { title: 'Titos Burger', id: 3, logo: '../img/services_img/titos_logo.jpg', img: '../img/services_img/titos_largeimage.jpg', description: 'Vendo hamburguesas' },
+    { title: 'Farmacia similares', id: 4, logo: '../img/services_img/similares_logo.jpg', img: '../img/services_img/similares_largeimage.jpg', description: 'Vendo medicina de dudosa calidad' },
+    { title: 'Tortas Don Beto', id: 5, logo: '../img/services_img/beto_logo.jpg', img: '../img/services_img/beto_largeimage.jpg', description: 'Vendo tortas que no hacen que te cagues' }
   ];
 })
 
