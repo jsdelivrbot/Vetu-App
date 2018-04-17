@@ -1,0 +1,37 @@
+{
+  "name": "angular-jwt-module",
+  "version": "1.0.0",
+  "description": "JWT authorization for Angular js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-mash/angular-jwt-module.git"
+  },
+  "keywords": [
+    "jwt",
+    "angular",
+    "api",
+    "token",
+    "authentication",
+    "token-authentication",
+    "token-based"
+  ],
+  "author": "Manish Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-mash/angular-jwt-module/issues"
+  },
+  "homepage": "https://github.com/s-mash/angular-jwt-module#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "jsonwebtoken": "^7.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3"
+  }
+}

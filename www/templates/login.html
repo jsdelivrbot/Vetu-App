@@ -1,0 +1,39 @@
+<div>
+    <ion-view view-title="Login" class="login">
+        <ion-content>
+            <div>
+                <span class="helper"></span>
+                <img class="logo" src="img/Logo2.png">
+            </div>
+
+            <form>
+                <div class="separate-div" ng-show="error_login">
+                    <span class="input-label-error">Error en las credenciales</span>                    
+                </div>
+
+                <div class="separate-div">
+                    <span class="input-label-user">Usuario</span>
+                    <label class="item item-input">
+                        <input type="text" placeholder="Ingresa tu nombre de usuario..." ng-model="data.username">
+                    </label>
+                </div>
+
+                <div class="separate-div">
+                    <span class="input-label-password">Contraseña</span>
+                    <label class="item item-input">
+                        <input type="password" placeholder="Ingresa tu contraseña" ng-model="data.password">
+                    </label>
+                </div>
+
+                <div class="separate-div">
+                    <button class="button button-block button-positive" ng-disabled="!data.username || !data.password" ng-click="login()">
+                        Acceder
+                    </button>
+                </div>
+            </form>
+
+
+
+        </ion-content>
+    </ion-view>
+</div>

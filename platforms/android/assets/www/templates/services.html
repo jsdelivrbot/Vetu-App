@@ -1,0 +1,24 @@
+<ion-view view-title="Servicios">
+    <ion-content>
+      <ion-list>
+        <ion-item ng-repeat="service in services" href="#/app/services/{{service.id}}">
+          <div class="list card">
+            <div class="item item-avatar">
+              <img src={{service.logo}}>
+              <h2>{{service.title}}</h2>
+            </div>
+            <div class="item item-body">
+              <img class="full-image" src={{service.img}}>
+              <p>
+                {{service.description}}
+              </p>
+              <p>
+                <a href="#/" class="subdued">1 Like</a>
+                <a href="#/" class="subdued">5 Comments</a>
+              </p>
+            </div>
+          </div>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-view>
