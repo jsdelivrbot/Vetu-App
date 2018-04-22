@@ -1,24 +1,25 @@
 <ion-view view-title="Servicios">
     <ion-content>
       <ion-list>
-        <ion-item ng-repeat="service in services" href="#/app/services/{{service.id}}">
+        <ion-item ng-repeat="service in services" href="#/app/services/{{service.service_id}}">
           <div class="list card">
             <div class="item item-avatar">
-              <img src={{service.logo}}>
-              <h2>{{service.title}}</h2>
+              <h2 ng-bind="service.service_name"></h2>
+              <p ng-bind="service.service_direction"></p>
             </div>
             <div class="item item-body">
-              <img class="full-image" src={{service.img}}>
-              <p>
-                {{service.description}}
-              </p>
-              <p>
-                <a href="#/" class="subdued">1 Like</a>
-                <a href="#/" class="subdued">5 Comments</a>
-              </p>
+              <p ng-bind="service.service_description"></p>
+             
             </div>
           </div>
         </ion-item>
       </ion-list>
+      <div class="bar bar-footer bar-assertive" ng-hide="conexion">
+        <div class="title">No hay conexión</div>
+      </div>
+      <div class="bar bar-footer bar-balanced" ng-hide="!conexion || services.length > 0">
+        <div class="title">No hay tareas</div>
+      </div>
     </ion-content>
   </ion-view>
+  

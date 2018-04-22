@@ -1,5 +1,5 @@
 
-angular.module('starter', ['ionic','ngResource',"angular-jwt",'starter.controllers', 'starter.services', 'starter.constants'])
+angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'starter.controllers', 'starter.services', 'starter.constants'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -25,14 +25,11 @@ angular.module('starter', ['ionic','ngResource',"angular-jwt",'starter.controlle
     controller: 'AppCtrl'
   })  
   
-  .state('app.login', {
+  .state('login', {
     url: '/login',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/login.html',
-        controller: 'LoginCtrl'
-      }
-    }
+    templateUrl: 'templates/login.html',
+    controller: 'LoginCtrl'
+    
   })
    
   .state('app.services', {
@@ -46,21 +43,21 @@ angular.module('starter', ['ionic','ngResource',"angular-jwt",'starter.controlle
   })
 
   .state('app.service', {
-    url: '/services/:serviceId',
+    url: '/services/:id',
     views: {
       'menuContent': {
         templateUrl: 'templates/service.html',
-        controller: 'ServiceCtrl'
+        controller: 'ProductsCtrl'
       }
     }
   })
 
-  .state('app.recipes', {
-    url: '/recipes',
+  .state('app.receipts', {
+    url: '/receipts',
     views: {
       'menuContent': {
-        templateUrl: 'templates/recipes.html',
-        controller: 'RecipesCtrl'
+        templateUrl: 'templates/receipts.html',
+        controller: 'ReceiptsCtrl'
       }
     }
   })

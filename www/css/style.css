@@ -67,6 +67,7 @@ button.button-access{
     text-align: center;
     color: #444;
     font-weight: bold;
+    /* margin-bottom: 8%; */
 }
 
 .input-label-error{
@@ -92,17 +93,27 @@ button.button-access{
     padding: 7% 7% 7% 7%; }
 
 div.error {
-    margin-top: 30%;
+    margin-top: 10%;
     }
 
 img.logo {
     max-width: 40%;
 }
 
-div.separate-div {
-   margin-top: 8%;
+div.separate-error {
+   margin-top: 2%;
 
 }
+
+div.separate-div {
+    margin-top: 8%;
+ 
+ }
+
+label.separate-label {
+    margin-top: 3%;
+ 
+ }
 
 div.profile_title{
     color: #444;
