@@ -4,12 +4,17 @@
         <ion-item ng-repeat="service in services" href="#/app/services/{{service.service_id}}">
           <div class="list card">
             <div class="item item-avatar">
+              <img src="../img/services_img/steren_logo.jpg">
               <h2 ng-bind="service.service_name"></h2>
               <p ng-bind="service.service_direction"></p>
             </div>
             <div class="item item-body">
+              <img class="full-image" src="../img/services_img/steren_largeimage.jpg">
               <p ng-bind="service.service_description"></p>
-             
+              <p>
+                <a href="#/" class="subdued">1 Like</a>
+                <a href="#/" class="subdued">5 Comments</a>
+              </p>
             </div>
           </div>
         </ion-item>
@@ -17,9 +22,8 @@
       <div class="bar bar-footer bar-assertive" ng-hide="conexion">
         <div class="title">No hay conexión</div>
       </div>
-      <div class="bar bar-footer bar-balanced" ng-hide="!conexion || services.length > 0">
+      <div class="bar bar-footer bar-balanced" ng-hide="!conexion || service.length > 0">
         <div class="title">No hay tareas</div>
       </div>
     </ion-content>
   </ion-view>
-  
