@@ -1,10 +1,40 @@
 <ion-view view-title="Recibos">
-    <ion-content>
-      <ion-list>
-        <ion-item ng-repeat="recipe in recipes">
-          {{recipe.title}}
-        </ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-view>
-  
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="receipt in receipts">
+        <div class="item item-divider">
+          <span ng-bind="receipt.receipt_id" class="input-label"></span>
+        </div>
+        </div>
+        <div class="item item-text-wrap">
+          <ul>
+            <li>
+              <strong>Usuario:</strong>
+              <span ng-bind="receipt.receipt_service"></span>
+            </li>
+            <li>
+              <strong>Servicio:</strong>
+              <span ng-bind="receipt.receipt_service">
+            </li>
+            <li>
+              <strong>Fecha:</strong>
+              <span ng-bind="receipt.receipt_date">
+            </li>
+            <li>
+              <strong>Total:</strong>
+              <span ng-bind="receipt.receipt_total">
+            </li>
+          </ul>
+        </div>
+      </ion-item>
+    </ion-list>
+    <div class="bar bar-footer bar-assertive" ng-hide="conexion">
+      <div class="title">No hay conexión</div>
+    </div>
+    <div class="bar bar-footer bar-balanced" ng-hide="!conexion || receipts.length > 0">
+      <div class="title">No hay recibos</div>
+    </div>
+    <ion-refresher pulling-text="Recargar..." on-refresh="doRefresh()">
+    </ion-refresher>
+  </ion-content>
+</ion-view>
