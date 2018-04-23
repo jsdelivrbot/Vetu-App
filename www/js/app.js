@@ -24,11 +24,21 @@ angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'start
     templateUrl: 'templates/menu.html',
     controller: 'AppCtrl'
   })  
+
+  .state('app.cart', {
+    url: '/cart',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/cart.html',
+        controller: 'CartCtrl'
+      }
+    }
+  })
   
   .state('login', {
     url: '/login',
     templateUrl: 'templates/login.html',
-    controller: 'LoginCtrl'
+    // controller: 'LoginCtrl'
     
   })
    

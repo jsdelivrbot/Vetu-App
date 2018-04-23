@@ -1,0 +1,13 @@
+{
+  "name": "angular-jwt",
+  "_cacheHeaders": {
+    "ETag": "W/\"cc4c43512dfd9c1958b81f0ee74e838f1e0777a8\"",
+    "Content-Type": "application/javascript;charset=utf-8"
+  },
+  "_release": "e-tag:W/\"cc4c435",
+  "main": "index.js",
+  "_source": "https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js",
+  "_target": "*",
+  "_originalSource": "https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js",
+  "_direct": true
+}

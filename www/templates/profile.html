@@ -1,6 +1,48 @@
-<ion-view view-title="Profile">
+<ion-view view-title="Perfil">
     <ion-content>
-      <h1>Perfil</h1>
+      
+    <div class="header_profile"> 
+      <div class="item-borderless avatar_profile">
+          <img src="img/Profile.png" class="img-circle">     
+          <span class="username_profile">{{user.username}}</span>
+      </div>     
+    </div> 
+
+    <div class="list profile_list">
+
+        <a class="item item-icon-left">
+          <i class="icon ion-person custom-icon2"></i>
+          <strong>Username:</strong><p></p>
+          <span>{{user.user_id}}</span>
+        </a>
+
+        <a class="item item-icon-left">
+            <i class="icon ion-email custom-icon2"></i>
+            <strong>Correo:</strong><p></p>
+            <span>{{user.useremail}}</span>
+        </a>
+
+        <a class="item item-icon-left">
+            <i class="icon ion-ios-telephone custom-icon2"></i>
+            <strong>Teléfono:</strong><p></p>
+            <span>{{user.userphone}}</span>
+        </a>
+
+        <a class="item item-icon-left">
+            <i class="icon ion-gear-a custom-icon2"></i>
+            <strong>Tipo de cuenta:</strong><p></p>
+            <span>{{user.usertype}}</span>
+        </a>
+
+        <!-- <a class="item item-icon-left" href="#/app/receipts">
+            <i class="icon ion-bag custom-icon2" ></i>
+            <strong>Recibos:</strong><p></p>
+            <span>{{number_receipts}}</span>
+        </a> -->
+      
+      
+      </div>
+
     </ion-content>
   </ion-view>
   

@@ -1,12 +1,12 @@
 <ion-view view-title="Servicio">
     <ion-content>
-        <h4>Servicio: Nombre de servicio</h4>
-        <ul class="list">
-            <li class="item">Item 1</li>
-            <li class="item">Item 2</li>
-            <li class="item">Item 3</li>
-            <li class="item">Item 4</li>
-            <li class="item">Item 5</li>
-        </ul>
+        <h4>&nbsp;&nbsp;Servicio: {{service.service_name}}</h4>
+        <div class="list">
+            <ion-item class="item-borderless" ng-repeat="product in service.products">
+                <div class="item item-button-right item-borderless"> {{product.product_description}} &nbsp; ${{product.product_price}}
+                        <button class="button button-positive" ion-button><i class="icon ion-ios-cart"></i></button>
+                </div>                    
+            </ion-item>
+        </div>
     </ion-content>
   </ion-view>

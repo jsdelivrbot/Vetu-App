@@ -1,6 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="false">
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable">
+    <ion-nav-bar class="bar-positive">
       <ion-nav-back-button>
       </ion-nav-back-button>
 
@@ -13,20 +13,49 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Menu</h1>
-    </ion-header-bar>
-    <ion-content>
+   
+    <ion-content class="background_menu">
+      <div class="menu_logo">
+        <img src="img/Logo3.png">
+      </div>
+      
+
+      <div class="item item-avatar item-borderless " style="background-color: transparent">
+        <img src="img/Profile.png">
+        <span class="name">{{user.username}}</span>
+        <p></p>
+        <span class="email">{{user.useremail}}</span>
+      </div>
+
       <ion-list>      
-        <ion-item menu-close href="#/app/services">
-          Servicios
+
+        <ion-item style="background-color: transparent" class="item-icon-left " menu-close  href="#/app/services">
+          <i class="icon ion-pizza custom-icon"></i>
+          <div class="menu_options"> Servicios</div> 
+            
         </ion-item>
-        <ion-item menu-close href="#/app/receipts">
-          Recibos
+
+        <ion-item  style="background-color: transparent" class="item-icon-left menu_list"  menu-close  href="#/app/receipts">
+          <i class="icon ion-clipboard custom-icon"></i>
+          <div class="menu_options"> Recibos</div> 
         </ion-item>
-        <ion-item menu-close href="#/app/profile">
-          Perfil
+
+        <ion-item style="background-color: transparent" class="item-icon-left  menu_list" menu-close href="#/app/cart">
+          <i class="icon ion-ios-cart custom-icon"></i>
+          <div class="menu_options"> Carrito</div> 
         </ion-item>
+
+        <ion-item style="background-color: transparent" class="item-icon-left menu_list" menu-close href="#/app/profile">
+          <i class="icon ion-person custom-icon"></i>
+          <div class="menu_options"> Perfil</div> 
+        </ion-item>
+
+        <ion-item style="background-color: transparent" class="item-icon-left menu_list" menu-close ng-click="logout()" href="#/login">
+          <i class="icon ion-log-out custom-icon"></i>
+          <div class="menu_options"> Salir</div> 
+        </ion-item>
+
+
       </ion-list>
     </ion-content>
   </ion-side-menu>

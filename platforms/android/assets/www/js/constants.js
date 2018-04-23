@@ -1,2 +1,2 @@
-angular.module('starter')
-    .constant('API_HOST','http://af8bc223.ngrok.io');
+angular.module('starter.constants', [])
+    .constant('API_HOST',' http://a3838e01.ngrok.io');

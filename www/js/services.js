@@ -14,5 +14,9 @@ angular.module('starter.services', [])
 .factory('ServicesFactory', function ($resource, API_HOST) {
     return $resource(API_HOST + '/services/:id', { id: "@id" },
       { update: { method: "PUT" } });
-  });
-;
+})
+
+.factory('UsersFactory', function ($resource, API_HOST) {
+    return $resource(API_HOST + '/users/:id', { id: "@id" },
+      { update: { method: "PUT" } });
+});

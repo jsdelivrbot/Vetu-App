@@ -130,3 +130,125 @@ div.profile_subtitle{
 li.espacio { 
     margin-top: 30px; 
 }
+
+.custom-icon {
+    color : #f8631d;
+}
+
+.custom-icon2 {
+    color : #0096C7;
+}
+
+.background_menu{
+    background-color: #424242;    
+}
+
+.item .item-content
+{
+    background-color: transparent !important;
+    color: #dddddb;
+}
+
+.name{
+    font-size: 15px; 
+    font-weight: bold;
+    color: #0096C7;
+    
+}
+
+.email{
+    font-size: 15px; 
+    font-weight: bold;
+    color: #dddddb;
+    
+}
+
+.menu_logo{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.menu_options{
+    text-align: center;
+}
+
+.menu_list{
+    margin-top: 35px;
+}
+
+.card .item-avatar{
+    background: #424242;
+}
+
+.card .item-body{
+    background: rgba(187, 190, 190, 0.219);
+}
+
+.header_title{
+    color: #0096C7;
+    font-weight: bold; 
+    font-size: 17px;
+}
+
+.header_subtitle{
+    color: #dddddb;
+    font-weight: normal; 
+    font-size: 15px;
+}
+
+.body_list{
+    color: #424242;
+    font-weight: bold; 
+    font-size: 17px;
+}
+
+.receipts_body1{
+    margin-left: 56.4px;
+}
+
+.receipts_body2{
+    margin-left: 40px;
+}
+
+.item .item-divider{
+    color: #dddddb;
+    background: #424242;
+}
+
+.item .item-text-wrap{
+    background: rgba(187, 190, 190, 0.219);
+}
+
+.header_profile{
+    height: 260px;
+ 
+    background: #424242;
+
+}
+
+.avatar_profile{
+    padding-top: 30px;
+    margin: auto;
+    background-color: transparent; 
+    max-width:150px; 
+    max-height:150px;
+    
+ }
+
+ .username_profile{
+     color: #dddddb;
+     font-weight: bold;
+     font-size: 25px;
+     margin-left: 30%;     
+ }
+
+ .img-circle {
+    border-radius: 50%;
+    margin-bottom: 15px;
+     border: 3px solid white ;
+    
+}
+
+.profile_list{
+    color: #424242;
+}
