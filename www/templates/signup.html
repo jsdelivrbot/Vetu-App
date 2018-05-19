@@ -1,0 +1,67 @@
+<div>
+    <ion-view view-title="Registro" class="login">
+        <ion-content>
+            <div>
+                <img class="signup" src="img/Registrate.png">
+            </div>
+
+            <div class="item-borderless avatar_signup">
+                <img src="img/Perfil.jpg" class="img-circle">     
+            </div>   
+
+            <form>
+                <div class="separate-div">
+                    <span class="input-label-user">Usuario</span>
+                    <label class="item item-input separate-label">
+                        <i class="icon ion-person placeholder-icon"></i>
+                        <input type="text" placeholder="Ingresa tu nombre de usuario" ng-model="sign.user_id">
+                    </label>
+                    <div class="separate-error" ng-show="error_login">
+                        <span class="input-label-error">Error en las credenciales</span>                    
+                    </div>
+                </div>               
+
+                <div class="separate-div">
+                    <span class="input-label-password">Contraseña</span>
+                    <label class="item item-input separate-label">
+                        <i class="icon ion-locked placeholder-icon"></i>
+                        <input type="password" placeholder="Ingresa tu contraseña" ng-model="sign.userpassword">
+                    </label>
+                </div>
+
+                <div class="separate-div">
+                    <span class="input-label-password">Nombre completo</span>
+                    <label class="item item-input separate-label">
+                        <i class="icon ion-android-happy placeholder-icon"></i>
+                        <input type="text" placeholder="Ingresa tu nombre" ng-model="sign.username">
+                    </label>
+                </div>
+
+                <div class="separate-div">
+                    <span class="input-label-password">Correo electrónico</span>
+                    <label class="item item-input separate-label">
+                        <i class="icon ion-email placeholder-icon"></i>
+                        <input type="email" placeholder="Ingresa tu correo electrónico" ng-model="sign.useremail">
+                    </label>
+                </div>
+
+                <div class="separate-div">
+                    <span class="input-label-password">Teléfono</span>
+                    <label class="item item-input separate-label">
+                        <i class="icon ion-ios-telephone placeholder-icon"></i>
+                        <input type="tel" placeholder="Ingresa tu teléfono" ng-model="sign.userphone">
+                    </label>
+                </div>
+
+                <div class="separate-div">
+                    <button class="button button-block button-energized" ng-disabled="!sign.user_id || !sign.userpassword || !sign.username || !sign.userphone || !sign.useremail" ng-click="signup()">
+                        Registrarse
+                    </button>
+                </div>
+            </form>
+
+
+
+        </ion-content>
+    </ion-view>
+</div>

@@ -76,6 +76,12 @@ button.button-access{
     font-weight: bold;
 }
 
+.input-label-signup{
+    margin-left: 0%;
+    color: #0096C7;
+    font-weight: bold;
+}
+
 .input-label-password{    
     text-align: center;
     color: #444;
@@ -98,6 +104,19 @@ div.error {
 
 img.logo {
     max-width: 40%;
+}
+
+img.signup {
+    max-width: 60%;
+}
+
+img.success {
+    max-width: 100%;
+}
+
+img.success-gif {
+    margin-top: 5%;
+    max-width: 90%;
 }
 
 div.separate-error {
@@ -221,9 +240,8 @@ li.espacio {
 
 .header_profile{
     height: 260px;
- 
-    background: #424242;
-
+    background-image: url('../img/Header.png');
+    width: 100%;
 }
 
 .avatar_profile{
@@ -233,6 +251,14 @@ li.espacio {
     max-width:150px; 
     max-height:150px;
     
+ }
+
+.avatar_signup{
+    padding-top: 15px;
+    margin: auto;
+    background-color: transparent; 
+    max-width:150px; 
+    max-height:150px;
  }
 
  .username_profile{

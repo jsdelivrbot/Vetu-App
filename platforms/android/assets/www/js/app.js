@@ -37,9 +37,23 @@ angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'start
   
   .state('login', {
     url: '/login',
-    templateUrl: 'templates/login.html',
-    // controller: 'LoginCtrl'
-    
+    templateUrl: 'templates/login.html'
+  })
+
+  .state('signup', {
+    url: '/signup',
+    templateUrl: 'templates/signup.html',
+    controller: 'SignupCtrl'
+  })
+
+  .state('success', {
+    url: '/success',
+    templateUrl: 'templates/success.html'
+  })
+
+  .state('error', {
+    url: '/error',
+    templateUrl: 'templates/error.html'
   })
    
   .state('app.services', {

@@ -3,7 +3,9 @@
       
     <div class="header_profile"> 
       <div class="item-borderless avatar_profile">
-          <img src="img/Profile.png" class="img-circle">     
+          <!-- <img src="img/Profile.png" class="img-circle">      -->
+          <!-- <img data-ng-src="data:image/png;base64,{{b64encoded}}" class="img-circle">  -->
+          <img src={{image}} class="img-circle"/>
           <span class="username_profile">{{user.username}}</span>
       </div>     
     </div> 
@@ -34,11 +36,11 @@
             <span>{{user.usertype}}</span>
         </a>
 
-        <a class="item item-icon-left" href="#/app/receipts">
+        <!-- <a class="item item-icon-left" href="#/app/receipts">
             <i class="icon ion-bag custom-icon2" ></i>
             <strong>Recibos:</strong><p></p>
             <span>{{number_receipts}}</span>
-        </a>
+        </a> -->
       
       
       </div>

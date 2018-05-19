@@ -1,5 +1,6 @@
 angular.module('starter.controllers')
 .controller('ServicesCtrl', function($scope, $rootScope, $location, $http, ServicesFactory) {
+
     var HTTP_STATUS = {
         Badrequest: 400,
         Unauthorized: 401,
@@ -18,6 +19,10 @@ angular.module('starter.controllers')
       if(error.status == HTTP_STATUS.Unauthorized || error.status == HTTP_STATUS.Forbidden){
             localStorage.removeItem("access_token");
             $location.path('/login');
+      }
+      else{
+           $location.path('/error');
+           
       }
 
      });

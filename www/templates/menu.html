@@ -12,16 +12,16 @@
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
 
-  <ion-side-menu side="left">
+  <ion-side-menu side="left" >
    
-    <ion-content class="background_menu">
+    <ion-content class="background_menu" >
       <div class="menu_logo">
         <img src="img/Logo3.png">
       </div>
       
 
       <div class="item item-avatar item-borderless " style="background-color: transparent">
-        <img src="img/Profile.png">
+        <img data-ng-src="data:image/jpg;base64,{{user.userimage}}" data-err-src="image/png/Perfil.jpg">
         <span class="name">{{user.username}}</span>
         <p></p>
         <span class="email">{{user.useremail}}</span>

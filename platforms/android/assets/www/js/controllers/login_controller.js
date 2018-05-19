@@ -14,7 +14,7 @@ angular.module('starter.controllers')
         $rootScope.token = window.localStorage.getItem("access_token");
         $http.defaults.headers.common.Authorization = 'Bearer ' + $rootScope.token;
         var payload = jwtHelper.decodeToken($rootScope.token);
-        $rootScope.user = UsersFactory.get({ id: payload.user_name});
+        $scope.user = UsersFactory.get({ id: payload.user_name});
         $location.path('/services');
     }
     else{

@@ -1,8 +1,9 @@
 angular.module('starter.controllers')
 .controller('ProfileCtrl', function($scope, $rootScope) {
 
-  $scope.user = $rootScope.user;
+  $scope.image = "data:image/jpg;base64,"+ $scope.user.userimage;
   // $scope.number_receipts = Object.keys($scope.user.receipts).length;
-  // console.log($scope.user);
-  // console.log($scope.number_receipts);
+  // $scope.image = $rootScope.image;
+  // console.log($scope.image);
+
 });
