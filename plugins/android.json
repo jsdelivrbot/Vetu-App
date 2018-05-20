@@ -7,6 +7,9 @@
     "files": {}
   },
   "installed_plugins": {
+    "com.mercadopago.cordova.sdk": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
@@ -20,9 +23,6 @@
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "com.mercadopago.cordova.sdk": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   },

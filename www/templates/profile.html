@@ -1,14 +1,14 @@
 <ion-view view-title="Perfil">
     <ion-content>
-      
-    <div class="header_profile"> 
+
+    <div class="header_profile">
       <div class="item-borderless avatar_profile">
           <!-- <img src="img/Profile.png" class="img-circle">      -->
           <!-- <img data-ng-src="data:image/png;base64,{{b64encoded}}" class="img-circle">  -->
           <img src={{image}} class="img-circle"/>
           <span class="username_profile">{{user.username}}</span>
-      </div>     
-    </div> 
+      </div>
+    </div>
 
     <div class="list profile_list">
 
@@ -30,21 +30,19 @@
             <span>{{user.userphone}}</span>
         </a>
 
-        <a class="item item-icon-left">
+        <a class="item item-icon-left" ng-click="startCheckout()">
             <i class="icon ion-gear-a custom-icon2"></i>
             <strong>Tipo de cuenta:</strong><p></p>
             <span>{{user.usertype}}</span>
         </a>
 
-        <!-- <a class="item item-icon-left" href="#/app/receipts">
+        <a class="item item-icon-left" href="#/app/receipts">
             <i class="icon ion-bag custom-icon2" ></i>
             <strong>Recibos:</strong><p></p>
             <span>{{number_receipts}}</span>
-        </a> -->
-      
-      
+        </a>
+
       </div>
 
     </ion-content>
   </ion-view>
-  

@@ -9,18 +9,19 @@ angular.module('starter.controllers')
     }
 
     if (window.localStorage.getItem("access_token")) {
-        
+
         $rootScope.logged = true;
         $rootScope.token = window.localStorage.getItem("access_token");
         $http.defaults.headers.common.Authorization = 'Bearer ' + $rootScope.token;
         var payload = jwtHelper.decodeToken($rootScope.token);
         $scope.user = UsersFactory.get({ id: payload.user_name});
+        window.localStorage.setItem("user_id",  payload.user_name);
         $location.path('/services');
     }
     else{
         $rootScope.logged = false;
     }
-  
+
     $scope.logged = false;
     $scope.error_login = false;
     $scope.data = {
@@ -29,16 +30,16 @@ angular.module('starter.controllers')
         password: "",
         client_id: "my-trusted-client"
     };
-  
+
     $scope.encoded = btoa("my-trusted-client:secret");
-   
+
     $scope.logout = function () {
         localStorage.removeItem("access_token");
         window.location.reload();
     }
 
     $scope.login = function () {
-  
+
         var req = {
             method: 'POST',
             url: API_HOST + "/oauth/token",
@@ -53,7 +54,7 @@ angular.module('starter.controllers')
                 $http.defaults.headers.common.Authorization = 'Bearer ' + data.data.access_token;
                 window.localStorage.setItem("access_token", data.data.access_token);
                 window.location.reload();
-  
+
             })
             .catch(function (error) {
                 if (error.status == HTTP_STATUS.Badrequest || HTTP_STATUS.Unauthorized) {

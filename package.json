@@ -9,6 +9,7 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
+    "com.mercadopago.cordova.sdk": "~1.1.18",
     "cordova-android": "6.3.0",
     "cordova-plugin-device": "^2.0.1",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
@@ -26,8 +27,6 @@
       "cordova-plugin-ionic-keyboard": {},
       "com.mercadopago.cordova.sdk": {}
     },
-    "platforms": [
-      "android"
-    ]
+    "platforms": []
   }
 }

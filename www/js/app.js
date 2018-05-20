@@ -3,13 +3,13 @@ angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'start
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-      cordova.plugins.Keyboard.disableScroll(true);
+    // if (window.cordova && window.cordova.plugins.Keyboard) {
+    //   cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+    //   cordova.plugins.Keyboard.disableScroll(true);
 
-    }
+    // }
     if (window.StatusBar) {
-  
+
       StatusBar.styleDefault();
     }
   });
@@ -23,7 +23,7 @@ angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'start
     abstract: true,
     templateUrl: 'templates/menu.html',
     controller: 'AppCtrl'
-  })  
+  })
 
   .state('app.cart', {
     url: '/cart',
@@ -34,7 +34,7 @@ angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'start
       }
     }
   })
-  
+
   .state('login', {
     url: '/login',
     templateUrl: 'templates/login.html'
@@ -51,11 +51,17 @@ angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'start
     templateUrl: 'templates/success.html'
   })
 
+  .state('premium', {
+    url: '/premium',
+    templateUrl: 'templates/premium.html',
+    controller: 'ProfileCtrl'
+  })
+
   .state('error', {
     url: '/error',
     templateUrl: 'templates/error.html'
   })
-   
+
   .state('app.services', {
     url: '/services',
     views: {
@@ -95,6 +101,6 @@ angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'start
       }
     }
   });
- 
+
   $urlRouterProvider.otherwise('/app/services');
 });
