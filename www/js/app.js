@@ -1,5 +1,5 @@
 
-angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'starter.controllers', 'starter.services', 'starter.constants'])
+angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'starter.controllers', 'starter.services', 'starter.constants', 'ngMap'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -78,6 +78,16 @@ angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'start
       'menuContent': {
         templateUrl: 'templates/service.html',
         controller: 'ProductsCtrl'
+      }
+    }
+  })
+
+  .state('app.map', {
+    url: '/map',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/map.html',
+        controller: 'MapCtrl'
       }
     }
   })
