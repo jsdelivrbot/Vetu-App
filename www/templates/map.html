@@ -1,7 +1,7 @@
 <ion-view view-title="Map">
   <ion-content>
     <h1>Map</h1>
-    <div map-lazy-load={{googleMapsUrl}} map-lazy-load-params="">
+    <div map-lazy-load={{googleMapsUrl}} map-lazy-load-params="" style="height:200%; width: 200%;">
       <div style="width: 68%; float:left; height: 100%">
         <b>Origin </b>
         <select ng-model="origin" ng-init="origin='{lat:31.867140, lng:-116.624717}'">
@@ -13,7 +13,7 @@
           <option value="current-location">Ubicaci&oacute;n actual</option>
         </select>
   
-        <ng-map zoom="14" id="my-map" center="37.7699298, -122.4469157" style="height:90%" on-click="logLatLng()" >
+        <ng-map zoom="14" id="my-map" center="37.7699298, -122.4469157" on-click="logLatLng()" >
           <directions 
             draggable="false"
             panel="panel"
@@ -24,6 +24,11 @@
           </directions>
         </ng-map> 
       </div>
-       <div id="panel" style="width: 28%; float:left; height: 100%; overflow: auto; padding: 0px 5px">
+      <div id="panel" style="width: 28%; clear:both; height: 100%; overflow: auto; padding: 0px 5px; float: left;" />
+        <style type="text/css">
+          tbody tr td.adp-substep {
+              display: none;
+          }
+        </style>
   </ion-content>
 </ion-view>
