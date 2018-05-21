@@ -4,8 +4,8 @@
     <div map-lazy-load={{googleMapsUrl}} map-lazy-load-params="" style="height:50%; width: 200%;">
       <div style="width: 68%; float:left; height: 100%">
         <b>Origin </b>
-        <select ng-model="origin" ng-init="origin='{lat:31.867140, lng:-116.624717}'">
-          <option value="{lat:31.867140, lng:-116.624717}">Repartidor</option>
+        <select ng-model="origin" ng-init="origin='{lat:31.867308, lng:-116.624831}'">
+          <option value="{lat:31.867308, lng:-116.624831}">Repartidor</option>
         </select>
 
         <b>Destino</b>
@@ -23,12 +23,16 @@
             destination="{{destination}}">
           </directions>
         </ng-map>
+
       </div>
       <div id="panel" style="width: 28%; clear:both; height: 100%; overflow: auto; padding: 0px 5px; float: left;" />
-        <style type="text/css">
-          tbody tr td.adp-substep {
-              display: none;
-          }
-        </style>
-  </ion-content>
+      <style type="text/css">
+        tbody tr td.adp-substep {
+          display: none;
+        }
+      </style>
+      <div style="position:fixed; margin-top:240px; margin-left: 250px;">
+        <button class="button button-positive" ion-button icon-start ng-click="generateReceipt()"><i class="icon ion-card"></i>  Realizar compra</button>
+      </div>
+      </ion-content>
 </ion-view>

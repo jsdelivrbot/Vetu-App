@@ -35,6 +35,8 @@ angular.module('starter.controllers')
 
     $scope.logout = function () {
         localStorage.removeItem("access_token");
+        localStorage.removeItem("actual_lat");
+        localStorage.removeItem("actual_lon");
         window.location.reload();
     }
 

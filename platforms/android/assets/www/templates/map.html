@@ -1,6 +1,6 @@
-<ion-view view-title="Map">
+<ion-view view-title="Mapa">
   <ion-content>
-    <h1>Map</h1>
+    <h1>Mapa</h1>
     <div map-lazy-load={{googleMapsUrl}} map-lazy-load-params="" style="height:50%; width: 200%;">
       <div style="width: 68%; float:left; height: 100%">
         <b>Origin </b>
@@ -8,7 +8,7 @@
           <option value="{lat:31.867140, lng:-116.624717}">Repartidor</option>
         </select>
 
-        <b>Destination </b>
+        <b>Destino</b>
         <select ng-model="destination" ng-init="destination='current-location'">
           <option value="current-location">Ubicaci&oacute;n actual</option>
         </select>
@@ -23,12 +23,16 @@
             destination="{{destination}}">
           </directions>
         </ng-map>
+        {{map.directionsRenderers[0].directions.routes[0].overview_path.length}}
       </div>
       <div id="panel" style="width: 28%; clear:both; height: 100%; overflow: auto; padding: 0px 5px; float: left;" />
-        <style type="text/css">
-          tbody tr td.adp-substep {
-              display: none;
-          }
-        </style>
-  </ion-content>
+      <style type="text/css">
+        tbody tr td.adp-substep {
+          display: none;
+        }
+      </style>
+      <div style="position:fixed; margin-top:240px; margin-left: 250px;">
+        <button class="button button-positive" ion-button icon-start ng-click="createPayment()"><i class="icon ion-card"></i>  Realizar compra</button>
+      </div>
+      </ion-content>
 </ion-view>

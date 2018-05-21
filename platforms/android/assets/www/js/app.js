@@ -57,6 +57,12 @@ angular.module('starter', ['ionic', "ngRoute", "ngResource","angular-jwt",'start
     controller: 'ProfileCtrl'
   })
 
+  .state('compra', {
+    url: '/compra',
+    templateUrl: 'templates/compra.html',
+    controller: 'MapCtrl'
+  })
+
   .state('error', {
     url: '/error',
     templateUrl: 'templates/error.html'
