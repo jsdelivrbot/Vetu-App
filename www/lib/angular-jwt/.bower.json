@@ -6,8 +6,8 @@
   },
   "_release": "e-tag:W/\"cc4c435",
   "main": "index.js",
-  "_source": "https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js",
+  "_source": "https://cdn.jsdelivr.net/gh/auth0/angular-jwt@master/dist/angular-jwt.js",
   "_target": "*",
-  "_originalSource": "https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js",
+  "_originalSource": "https://cdn.jsdelivr.net/gh/auth0/angular-jwt@master/dist/angular-jwt.js",
   "_direct": true
 }
